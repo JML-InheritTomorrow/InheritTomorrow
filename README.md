@@ -1,2 +1,2 @@
 # InheritTomorrow
-Website for Inherit Tomorrow created by Manus AI
+Website for Inherit Tomorrow - powered by ManusAi. Created by JML
