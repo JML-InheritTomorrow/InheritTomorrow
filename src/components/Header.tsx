@@ -13,8 +13,7 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, onLogout, navigateTo, user 
       <div className="container">
         <div className="header-content">
           <div className="logo" onClick={() => navigateTo('home')}>
-            <h1>Inherit Tomorrow</h1>
-            <div className="tagline">Your Legacy, Secured Today</div>
+            <img src="/src/assets/images/logo.png" alt="Inherit Tomorrow - Your Legacy, Secured Today" />
           </div>
           <nav className="main-nav">
             <ul>

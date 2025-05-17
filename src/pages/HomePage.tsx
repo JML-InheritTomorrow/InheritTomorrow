@@ -24,10 +24,7 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
           </div>
         </div>
         <div className="hero-image">
-          {/* Placeholder for hero image of Black family discussing documents */}
-          <div className="image-placeholder">
-            <p>Image: Black family discussing documents</p>
-          </div>
+          <img src="/src/assets/images/hero.png" alt="Family discussing estate planning documents" />
         </div>
       </section>
 

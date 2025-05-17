@@ -6,7 +6,7 @@ const Footer: React.FC<{ navigateTo: (page: string) => void }> = ({ navigateTo }
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <h3>Inherit Tomorrow</h3>
+            <img src="/src/assets/images/logo.png" alt="Inherit Tomorrow - Your Legacy, Secured Today" />
             <p>Preserving your legacy, protecting your family</p>
           </div>
           
