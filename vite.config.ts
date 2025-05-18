@@ -10,6 +10,12 @@ export default defineConfig({
     outDir: 'docs'
   },
   server: {
-    allowedHosts: ['5173-i6vbbzdp9dwypfagm528t-ad7476d0.manus.computer']
+    allowedHosts: [
+      '5173-i6vbbzdp9dwypfagm528t-ad7476d0.manus.computer',
+      '5175-icsnxbcy7qjxhjwhkkhcz-ad7476d0.manus.computer',
+      '5176-icsnxbcy7qjxhjwhkkhcz-ad7476d0.manus.computer',
+      '5177-icsnxbcy7qjxhjwhkkhcz-ad7476d0.manus.computer',
+      '5178-icsnxbcy7qjxhjwhkkhcz-ad7476d0.manus.computer'
+    ]
   }
 })

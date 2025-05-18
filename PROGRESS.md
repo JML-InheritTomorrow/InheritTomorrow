@@ -35,3 +35,43 @@
 - Enhance legal review workflow for premium users
 - Develop nonprofit partnership portal
 - Implement document sharing and collaboration features
+
+# Inherit Tomorrow Website Updates - May 18, 2025
+
+## Completed Changes
+
+1. **Homepage Updates**
+   - Removed "Community Voices" and "Trusted Partners" sections from the homepage
+   - Preserved the removed code in `removed_sections.txt` for future use
+
+2. **Footer Updates**
+   - Confirmed the footer logo correctly links to the top of the homepage
+
+3. **New About Us Page**
+   - Created a new About Us page featuring James Loadholt as the founder
+   - Implemented the page according to the provided layout and design notes
+   - Added appropriate styling with gold/cream backgrounds and mobile optimization
+   - Included the founder's photo in a circular frame as specified
+
+4. **Navigation Updates**
+   - Added "About Us" to the main navigation between "Resources" and "Log In"
+   - Updated routing in App.tsx to handle the new page
+
+## Technical Details
+
+- All image tags include explicit width and height attributes as requested
+- Added custom CSS for the About Us page with responsive design
+- Updated Vite configuration to allow Manus preview domains
+
+## Next Steps
+
+- Consider adding partner logos and trust badges to the About Us page once agreements are in place
+- Reintroduce the "Community Voices" and "Trusted Partners" sections to the homepage when content is ready
+
+## Files Modified/Created
+
+- `/src/pages/AboutPage.tsx` - New About Us page component
+- `/src/assets/css/about.css` - Styling for the About Us page
+- `/src/App.tsx` - Updated to include the About Us page in routing
+- `/src/components/Header.tsx` - Updated navigation to include About Us link
+- `/vite.config.ts` - Updated allowed hosts for preview
