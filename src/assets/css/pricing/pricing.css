@@ -1,0 +1,274 @@
+/* Pricing Page Styles */
+
+.pricing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #d4af37; /* Rich Gold */
+}
+
+.pricing-subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Horizontal Pricing Tiers */
+.pricing-tiers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.pricing-tier {
+  flex: 1;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-tier:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tier-specific styling */
+.free-tier {
+  background-color: #222; /* Black for pride */
+  color: white;
+  border: 2px solid #333;
+}
+
+.basic-tier {
+  background-color: #1a5336; /* Deep Green for growth */
+  color: white;
+  border: 2px solid #1a5336;
+}
+
+.premium-tier {
+  background-color: #d4af37; /* Rich Gold for wealth */
+  color: black;
+  border: 2px solid #d4af37;
+  position: relative;
+  z-index: 1;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #d4af37;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tier-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tier-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.tier-price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.tier-description {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.tier-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  flex-grow: 1;
+}
+
+.tier-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.tier-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+}
+
+.free-tier .tier-features li::before {
+  color: #d4af37;
+}
+
+.basic-tier .tier-features li::before {
+  color: #d4af37;
+}
+
+.premium-tier .tier-features li::before {
+  color: #222;
+}
+
+.tier-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: auto;
+}
+
+.free-tier .btn-block {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.free-tier .btn-block:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.basic-tier .btn-block {
+  background-color: white;
+  color: #1a5336;
+}
+
+.basic-tier .btn-block:hover {
+  background-color: #f0f0f0;
+}
+
+.premium-tier .btn-block {
+  background-color: #222;
+  color: white;
+}
+
+.premium-tier .btn-block:hover {
+  background-color: #333;
+}
+
+.add-on {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.premium-tier .add-on {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder for images */
+.image-placeholder {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.premium-tier .image-placeholder {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .pricing-tiers {
+    flex-direction: column;
+  }
+  
+  .pricing-tier {
+    margin-bottom: 2rem;
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-buttons button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d4af37;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: #c4a030;
+}
+
+.btn-secondary {
+  background-color: #222;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
