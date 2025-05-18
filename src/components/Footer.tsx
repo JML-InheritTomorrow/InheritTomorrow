@@ -7,7 +7,7 @@ const Footer: React.FC<{ navigateTo: (page: string) => void }> = ({ navigateTo }
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo" onClick={() => navigateTo('home')}>
-            <img src={logoImage} alt="Inherit Tomorrow - Your Legacy, Secured Today" width="364" height="62" style={{cursor: 'pointer'}} />
+            <img src={logoImage} alt="Inherit Tomorrow - Your Legacy, Secured Today" width="320"  style={{cursor: 'pointer'}} />
           </div>
           
           <div className="footer-links">
