@@ -1,4 +1,5 @@
 import React from 'react'
+import heroImage from '../assets/images/hero.png'
 
 interface HomePageProps {
   navigateTo: (page: string) => void
@@ -24,7 +25,7 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/src/assets/images/hero.png" alt="Family discussing estate planning documents" />
+          <img src={heroImage} alt="Family discussing estate planning documents" />
         </div>
       </section>
 

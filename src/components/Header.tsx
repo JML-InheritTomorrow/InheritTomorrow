@@ -1,4 +1,5 @@
 import React from 'react'
+import logoImage from '../assets/images/logo.png'
 
 interface HeaderProps {
   isLoggedIn: boolean
@@ -13,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, onLogout, navigateTo, user 
       <div className="container">
         <div className="header-content">
           <div className="logo" onClick={() => navigateTo('home')}>
-            <img src="/src/assets/images/logo.png" alt="Inherit Tomorrow - Your Legacy, Secured Today" />
+            <img src={logoImage} alt="Inherit Tomorrow - Your Legacy, Secured Today" />
           </div>
           <nav className="main-nav">
             <ul>
