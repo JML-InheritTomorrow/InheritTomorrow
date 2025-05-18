@@ -15,7 +15,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
           <h2>Inherit Tomorrow is a culturally proud platform designed to empower Black families to protect what matters most—through wills, trusts, and estate planning tools rooted in legacy, trust, and community.</h2>
           
           <div className="founder-quote">
-            <p>"When my grandmother passed without a will, our family spent months in probate, losing her home. That moment inspired me to build Inherit Tomorrow—a space where legacy planning meets cultural pride."</p>
+            <p>"When my brother passed without a will, our family went through a very rough time handling his affairs. That moment inspired me to build Inherit Tomorrow—a space where legacy planning meets cultural pride."</p>
             <p className="quote-author">– James Loadholt</p>
           </div>
         </div>
