@@ -1,13 +1,13 @@
 import React from 'react'
+import logoImage from '../assets/images/InheritTomorrow-Color logo with background-fixed.jpg'
 
 const Footer: React.FC<{ navigateTo: (page: string) => void }> = ({ navigateTo }) => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-logo">
-            <img src="/src/assets/images/logo.png" alt="Inherit Tomorrow - Your Legacy, Secured Today" />
-            <p>Preserving your legacy, protecting your family</p>
+          <div className="footer-logo" onClick={() => navigateTo('home')}>
+            <img src={logoImage} alt="Inherit Tomorrow - Your Legacy, Secured Today" width="364" height="62" style={{cursor: 'pointer'}} />
           </div>
           
           <div className="footer-links">

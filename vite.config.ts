@@ -8,5 +8,8 @@ export default defineConfig({
   base: '/InheritTomorrow/',
   build: {
     outDir: 'docs'
+  },
+  server: {
+    allowedHosts: ['5173-i6vbbzdp9dwypfagm528t-ad7476d0.manus.computer']
   }
 })

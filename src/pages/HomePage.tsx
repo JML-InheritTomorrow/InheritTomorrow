@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from '../assets/images/hero.png'
+import heroImage from '../assets/images/InheritTomorrowHero-VeniceAI_SCEVTii_upscaled.jpg'
 
 interface HomePageProps {
   navigateTo: (page: string) => void
@@ -25,7 +25,7 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={heroImage} alt="Family discussing estate planning documents" />
+          <img src={heroImage} alt="Family discussing estate planning documents" width="582" height="466" />
         </div>
       </section>
 

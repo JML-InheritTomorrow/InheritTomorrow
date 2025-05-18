@@ -17,6 +17,11 @@
 - Full React application successfully deployed and validated
 - Updated logo, favicon, and hero image integration
 - Improved branding consistency across the site
+- Replaced hero image with new family image showing document review
+- Updated logo with new gold "INHERIT TOMORROW" design
+- Added explicit dimensions to all images for improved layout stability
+- Removed tagline from footer for cleaner design
+- Made footer logo clickable to navigate to homepage
 
 ## Current Work in Progress
 - None at this time
