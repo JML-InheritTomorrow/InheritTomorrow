@@ -14,10 +14,20 @@ import Checkout from './pages/Checkout'
 import PaymentSuccess from './pages/PaymentSuccess'
 import SubsidyApplication from './pages/SubsidyApplication'
 import SubsidyConfirmation from './pages/SubsidyConfirmation'
+import NYAdvancedDirective from './pages/NYAdvancedDirective'
+import AboutPage from './pages/AboutPage'
 import './App.css'
+import './assets/css/about.css'
+import './assets/css/forms/advanced-directive.css'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home')
+  // Get the hash from the URL
+  const getHashRoute = () => {
+    const hash = window.location.hash.substring(1);
+    return hash || 'home';
+  };
+
+  const [currentPage, setCurrentPage] = useState(getHashRoute())
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [user, setUser] = useState(null)
   const [selectedProduct] = useState({
@@ -25,25 +35,39 @@ function App() {
     price: 49
   })
 
+  // Update the URL hash when page changes
+  const updateHash = (page) => {
+    window.location.hash = page;
+  };
+
   const handleLogin = (userData: any) => {
     setUser(userData)
     setIsLoggedIn(true)
     setCurrentPage('dashboard')
+    updateHash('dashboard');
   }
 
   const handleLogout = () => {
     setUser(null)
     setIsLoggedIn(false)
     setCurrentPage('home')
+    updateHash('home');
   }
 
   const handleRegister = () => {
     setCurrentPage('login')
+    updateHash('login');
   }
 
   const navigateTo = (page: string) => {
     setCurrentPage(page)
+    updateHash(page);
   }
+
+  // Listen for hash changes
+  window.addEventListener('hashchange', () => {
+    setCurrentPage(getHashRoute());
+  });
 
   const renderPage = () => {
     switch (currentPage) {
@@ -73,6 +97,10 @@ function App() {
         return <SubsidyApplication navigateTo={navigateTo} />
       case 'subsidy-confirmation':
         return <SubsidyConfirmation navigateTo={navigateTo} />
+      case 'ny-advanced-directive':
+        return <NYAdvancedDirective navigateTo={navigateTo} />
+      case 'about':
+        return <AboutPage />
       default:
         return <HomePage navigateTo={navigateTo} />
     }
