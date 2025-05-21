@@ -75,3 +75,50 @@
 - `/src/App.tsx` - Updated to include the About Us page in routing
 - `/src/components/Header.tsx` - Updated navigation to include About Us link
 - `/vite.config.ts` - Updated allowed hosts for preview
+
+# Inherit Tomorrow Website Updates - May 18, 2025 (Additional)
+
+## Completed Changes
+
+1. **About Us Page Updates**
+   - Updated the founder bio text for James Loadholt with new professional background
+   - Changed from financial advisor to Digital Marketing professional with 30 years of experience
+   - Updated personal story to reference brother's passing instead of grandmother's home
+   - Maintained all styling and layout of the About Us page
+
+2. **Technical Updates**
+   - Updated Vite configuration to allow new Manus preview domains
+   - Built and published the site for production
+   - Synced all changes with GitHub repository
+
+## Next Steps
+
+- Continue to consider adding partner logos and trust badges to the About Us page once agreements are in place
+- Reintroduce the "Community Voices" and "Trusted Partners" sections to the homepage when content is ready
+
+## Files Modified
+
+- `/src/pages/AboutPage.tsx` - Updated founder bio text
+- `/vite.config.ts` - Updated allowed hosts for preview
+- `/docs/` - Updated build files for production
+- `/PROGRESS.md` - Updated documentation
+
+# Inherit Tomorrow Website Updates - May 18, 2025 (Additional)
+
+## Completed Changes
+
+1. **About Us Page Updates**
+   - Updated the founder quote in the hero section to reference brother instead of grandmother
+   - New quote: "When my brother passed without a will, our family went through a very rough time handling his affairs. That moment inspired me to build Inherit Tomorrow—a space where legacy planning meets cultural pride."
+   - Maintained all styling and layout of the About Us page
+
+2. **Technical Updates**
+   - Updated Vite configuration to allow new Manus preview domains
+   - Built and published the site for production
+   - Synced all changes with GitHub repository
+
+## Files Modified
+
+- `/src/pages/AboutPage.tsx` - Updated founder quote text
+- `/vite.config.ts` - Updated allowed hosts for preview
+- `/docs/` - Updated build files for production
