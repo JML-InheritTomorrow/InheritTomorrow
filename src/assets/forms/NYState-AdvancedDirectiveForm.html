@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Advance Directive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>New York Advance Directive</h1>
+        <form id="advance-directive-form">
+            <!-- General Information -->
+            <section>
+                <h2>General Information</h2>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="home-address">Home Address:</label>
+                <input type="text" id="home-address" name="home-address" required>
+                
+                <label for="telephone-number">Telephone Number:</label>
+                <input type="tel" id="telephone-number" name="telephone-number" required>
+            </section>
+
+            <!-- Part I: Health Care Proxy -->
+            <section>
+                <h2>Part I: Health Care Proxy</h2>
+                <label for="agent-name">Appointing Health Care Agent - Name:</label>
+                <input type="text" id="agent-name" name="agent-name" required>
+                
+                <label for="agent-address">Appointing Health Care Agent - Home Address:</label>
+                <input type="text" id="agent-address" name="agent-address" required>
+                
+                <label for="agent-phone">Appointing Health Care Agent - Telephone Number:</label>
+                <input type="tel" id="agent-phone" name="agent-phone" required>
+                
+                <label for="alternate-agent-name">Appointing Alternate Health Care Agent - Name:</label>
+                <input type="text" id="alternate-agent-name" name="alternate-agent-name">
+                
+                <label for="alternate-agent-address">Appointing Alternate Health Care Agent - Home Address:</label>
+                <input type="text" id="alternate-agent-address" name="alternate-agent-address">
+                
+                <label for="alternate-agent-phone">Appointing Alternate Health Care Agent - Telephone Number:</label>
+                <input type="tel" id="alternate-agent-phone" name="alternate-agent-phone">
+                
+                <label for="additional-instructions">Additional Instructions (Optional):</label>
+                <textarea id="additional-instructions" name="additional-instructions"></textarea>
+                
+                <label for="expiration-date">Date or Conditions for Expiration (if desired):</label>
+                <input type="text" id="expiration-date" name="expiration-date">
+                
+                <label for="agent-instructions">Instructions to Agent:</label>
+                <textarea id="agent-instructions" name="agent-instructions"></textarea>
+                
+                <label for="additional-care-instructions">Additional Instructions Regarding Advance Care Plans (Optional):</label>
+                <textarea id="additional-care-instructions" name="additional-care-instructions"></textarea>
+            </section>
+
+            <!-- Part II: Living Will -->
+            <section>
+                <h2>Part II: Living Will</h2>
+                <h3>Life-Sustaining Treatments</h3>
+                <p>Choice NOT To Prolong Life:</p>
+                <input type="checkbox" id="choice-not-to-prolong-life" name="choice-not-to-prolong-life">
+                <label for="choice-not-to-prolong-life">I do not want my life to be prolonged if I should be in an incurable or irreversible mental or physical condition with no reasonable expectation of recovery, including but not limited to:</label><br>
+                <input type="checkbox" id="terminal-condition" name="terminal-condition">
+                <label for="terminal-condition">Terminal condition</label><br>
+                <input type="checkbox" id="permanently-unconscious" name="permanently-unconscious">
+                <label for="permanently-unconscious">Permanently unconscious condition</label><br>
+                <input type="checkbox" id="minimally-conscious" name="minimally-conscious">
+                <label for="minimally-conscious">Minimally conscious condition</label><br>
+                <label for="specific-treatments">Specific Treatments to Withhold:</label><br>
+                <input type="checkbox" id="cardiac-resuscitation" name="cardiac-resuscitation">
+                <label for="cardiac-resuscitation">Cardiac resuscitation</label><br>
+                <input type="checkbox" id="mechanical-respiration" name="mechanical-respiration">
+                <label for="mechanical-respiration">Mechanical respiration</label><br>
+                <input type="checkbox" id="artificial-nutrition-hydration" name="artificial-nutrition-hydration">
+                <label for="artificial-nutrition-hydration">Artificial nutrition and hydration</label><br>
+                <input type="checkbox" id="antibiotics" name="antibiotics">
+                <label for="antibiotics">Antibiotics</label><br>
+                
+                <p>Choice TO Prolong Life:</p>
+                <input type="checkbox" id="choice-to-prolong-life" name="choice-to-prolong-life">
+                <label for="choice-to-prolong-life">I want my life to be prolonged as long as possible within the limits of generally accepted health care standards.</label><br>
+                
+                <label for="pain-relief">Relief from Pain:</label>
+                <textarea id="pain-relief" name="pain-relief"></textarea>
+                
+                <label for="other-wishes">Other Wishes:</label>
+                <textarea id="other-wishes" name="other-wishes"></textarea>
+            </section>
+
+            <!-- Organ Donation (Optional) -->
+            <section>
+                <h2>Organ Donation (Optional)</h2>
+                <label>Organ Donation Options:</label><br>
+                <input type="radio" id="no-donation" name="organ-donation" value="no-donation">
+                <label for="no-donation">I do not give any of my organs, tissues, or parts and do not want my agent, guardian, or family to make a donation on my behalf.</label><br>
+                <input type="radio" id="any-donation" name="organ-donation" value="any-donation">
+                <label for="any-donation">I give any needed organs, tissues, or parts.</label><br>
+                <input type="radio" id="specific-donation" name="organ-donation" value="specific-donation">
+                <label for="specific-donation">I give the following organs, tissues, or parts only:</label><br>
+                <input type="checkbox" id="transplant" name="transplant">
+                <label for="transplant">Transplant</label><br>
+                <input type="checkbox" id="therapy" name="therapy">
+                <label for="therapy">Therapy</label><br>
+                <input type="checkbox" id="research" name="research">
+                <label for="research">Research</label><br>
+                <input type="checkbox" id="education" name="education">
+                <label for="education">Education</label><br>
+            </section>
+
+            <!-- Part III: Execution -->
+            <section>
+                <h2>Part III: Execution</h2>
+                <label for="signature">Signature:</label>
+                <canvas id="signature-pad" width="400" height="200" style="border:1px solid #000000;"></canvas>
+                <button type="button" id="clear-signature">Clear Signature</button>
+                
+                <label for="execution-date">Date:</label>
+                <input type="date" id="execution-date" name="execution-date" required>
+                
+                <label for="print-name">Print Name:</label>
+                <input type="text" id="print-name" name="print-name" required>
+                
+                <label for="execution-address">Address:</label>
+                <input type="text" id="execution-address" name="execution-address" required>
+                
+                <h3>Witnesses (2 required):</h3>
+                <div id="witnesses">
+                    <div class="witness">
+                        <label for="witness1-signature">Witness 1 Signature:</label>
+                        <canvas class="witness-signature-pad" width="400" height="100" style="border:1px solid #000000;"></canvas>
+                        <button type="button" class="clear-witness-signature">Clear Signature</button>
+                        
+                        <label for="witness1-date">Date:</label>
+                        <input type="date" class="witness-date" name="witness1-date" required>
+                        
+                        <label for="witness1-print-name">Print Name:</label>
+                        <input type="text" class="witness-print-name" name="witness1-print-name" required>
+                        
+                        <label for="witness1-address">Address:</label>
+                        <input type="text" class="witness-address" name="witness1-address" required>
+                    </div>
+                    <div class="witness">
+                        <label for="witness2-signature">Witness 2 Signature:</label>
+                        <canvas class="witness-signature-pad" width="400" height="100" style="border:1px solid #000000;"></canvas>
+                        <button type="button" class="clear-witness-signature">Clear Signature</button>
+                        
+                        <label for="witness2-date">Date:</label>
+                        <input type="date" class="witness-date" name="witness2-date" required>
+                        
+                        <label for="witness2-print-name">Print Name:</label>
+                        <input type="text" class="witness-print-name" name="witness2-print-name" required>
+                        
+                        <label for="witness2-address">Address:</label>
+                        <input type="text" class="witness-address" name="witness2-address" required>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Steps -->
+            <button type="button" id="review-button">Review and Confirm</button>
+            <button type="button" id="submit-button" disabled>Submit</button>
+        </form>
+
+        <!-- Review Modal -->
+        <div id="review-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Review and Confirm</h2>
+                <div id="review-content"></div>
+                <button type="button" id="confirm-button">Confirm and Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

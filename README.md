@@ -26,6 +26,7 @@ Inherit Tomorrow addresses the unique needs and cultural considerations of Black
 - TypeScript for type safety
 - CSS for styling
 - Responsive design for all devices
+- Supabase for authentication and database storage
 
 ## Business Model
 
