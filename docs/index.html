@@ -5,7 +5,24 @@
     <link rel="icon" type="image/png" href="/InheritTomorrow/assets/favicon-2PYKV-Ju.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inherit Tomorrow - Your Legacy, Secured Today</title>
-    <script type="module" crossorigin src="/InheritTomorrow/assets/index-Dy0pyNCF.js"></script>
+    <script>
+      (function() {
+        // Check if we have a redirect in sessionStorage
+        var redirect = sessionStorage.redirect;
+        if (redirect && redirect !== window.location.href) {
+          // Clear the redirect from sessionStorage
+          delete sessionStorage.redirect;
+          
+          // Extract the path from the full URL
+          var url = new URL(redirect);
+          var path = url.pathname.replace('/InheritTomorrow', '');
+          
+          // Use history API to update the URL
+          window.history.replaceState(null, null, path);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/InheritTomorrow/assets/index-ClQ1DxC1.js"></script>
     <link rel="stylesheet" crossorigin href="/InheritTomorrow/assets/index-DczAHujg.css">
   </head>
   <body>
